@@ -1,0 +1,462 @@
+/* ============================================
+   CORTE DE CAJA — SRS RF-010
+   ============================================ */
+
+.corte-container {
+    padding: 20px;
+    background: #0f1117;
+    min-height: calc(100vh - 80px);
+    color: #e1e4e8;
+}
+
+.corte-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.corte-header h2 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #c7d2fe;
+}
+
+.corte-fecha {
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+/* RESUMEN */
+.corte-resumen {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.resumen-card {
+    background: rgba(26, 29, 46, 0.8);
+    border: 1px solid rgba(99, 102, 241, 0.1);
+    border-radius: 10px;
+    padding: 14px 18px;
+    flex: 1;
+    min-width: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.resumen-card.highlight {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(129, 140, 248, 0.08));
+    border-color: rgba(99, 102, 241, 0.3);
+}
+
+.resumen-label {
+    font-size: 0.75rem;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.resumen-valor {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #e1e4e8;
+}
+
+.resumen-valor.verde {
+    color: #34d399;
+}
+
+.resumen-valor.azul {
+    color: #60a5fa;
+}
+
+.resumen-valor.morado {
+    color: #a78bfa;
+}
+
+.resumen-valor.rojo {
+    color: #f87171;
+}
+
+/* BODY */
+.corte-body {
+    display: flex;
+    gap: 20px;
+}
+
+.corte-panel-izq {
+    flex: 3;
+}
+
+.corte-panel-der {
+    flex: 2;
+}
+
+/* CONTEO CIEGO */
+.conteo-ciego {
+    background: rgba(26, 29, 46, 0.8);
+    border: 1px solid rgba(99, 102, 241, 0.1);
+    border-radius: 14px;
+    padding: 20px;
+}
+
+.conteo-ciego h3 {
+    margin: 0 0 8px;
+    color: #c7d2fe;
+}
+
+.conteo-info {
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin-bottom: 16px;
+}
+
+.denominaciones-section {
+    margin-bottom: 16px;
+}
+
+.denominaciones-section h4 {
+    margin: 0 0 10px;
+    font-size: 0.9rem;
+    color: #818cf8;
+}
+
+.denominaciones-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.denominacion-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.denominacion-valor {
+    font-weight: 700;
+    font-size: 1rem;
+    min-width: 60px;
+    color: #c7d2fe;
+}
+
+.denominacion-input {
+    width: 80px;
+    padding: 8px;
+    text-align: center;
+    background: #12141e;
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: 6px;
+    color: #e1e4e8;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.denominacion-input:focus {
+    border-color: #818cf8;
+    outline: none;
+}
+
+.denominacion-subtotal {
+    flex: 1;
+    text-align: right;
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+.conteo-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(129, 140, 248, 0.08));
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    border-radius: 10px;
+    margin-top: 14px;
+}
+
+.conteo-total-valor {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #818cf8;
+}
+
+/* CONFIRMAR */
+.corte-confirmar {
+    background: rgba(26, 29, 46, 0.8);
+    border: 1px solid rgba(99, 102, 241, 0.1);
+    border-radius: 14px;
+    padding: 20px;
+}
+
+.corte-confirmar h3 {
+    margin: 0 0 12px;
+    color: #c7d2fe;
+}
+
+.form-group {
+    margin-bottom: 14px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #9ca3af;
+}
+
+.pin-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    letter-spacing: 8px;
+    text-align: center;
+    background: #12141e;
+    border: 2px solid rgba(99, 102, 241, 0.3);
+    border-radius: 10px;
+    color: #e1e4e8;
+    box-sizing: border-box;
+}
+
+.pin-input:focus {
+    border-color: #818cf8;
+    outline: none;
+}
+
+.obs-textarea {
+    width: 100%;
+    padding: 10px;
+    background: #12141e;
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: 8px;
+    color: #e1e4e8;
+    font-size: 0.88rem;
+    resize: vertical;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.obs-textarea:focus {
+    border-color: #818cf8;
+    outline: none;
+}
+
+.btn-corte-final {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: all 0.2s;
+    font-family: 'Inter', sans-serif;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #6366f1, #818cf8);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+}
+
+.btn-secondary {
+    background: rgba(107, 114, 128, 0.2);
+    color: #9ca3af;
+}
+
+/* RESULTADO */
+.corte-resultado {
+    max-width: 700px;
+    margin: 0 auto;
+    background: rgba(26, 29, 46, 0.8);
+    border: 1px solid rgba(99, 102, 241, 0.1);
+    border-radius: 14px;
+    padding: 24px;
+}
+
+.corte-resultado h3 {
+    margin: 0 0 20px;
+    text-align: center;
+    color: #c7d2fe;
+}
+
+.resultado-grid {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.resultado-item {
+    flex: 1;
+    text-align: center;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.resultado-label {
+    display: block;
+    font-size: 0.8rem;
+    color: #6b7280;
+    margin-bottom: 4px;
+}
+
+.resultado-valor {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #e1e4e8;
+}
+
+.resultado-diferencia {
+    border: 2px solid;
+}
+
+.resultado-diferencia.cuadrado {
+    border-color: rgba(16, 185, 129, 0.5);
+    background: rgba(16, 185, 129, 0.05);
+}
+
+.resultado-diferencia.sobrante {
+    border-color: rgba(59, 130, 246, 0.5);
+    background: rgba(59, 130, 246, 0.05);
+}
+
+.resultado-diferencia.faltante {
+    border-color: rgba(239, 68, 68, 0.5);
+    background: rgba(239, 68, 68, 0.05);
+}
+
+.resultado-valor-diferencia {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.cuadrado .resultado-valor-diferencia {
+    color: #34d399;
+}
+
+.sobrante .resultado-valor-diferencia {
+    color: #60a5fa;
+}
+
+.faltante .resultado-valor-diferencia {
+    color: #f87171;
+}
+
+.badge-diferencia {
+    display: inline-block;
+    font-size: 0.75rem;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-weight: 700;
+    margin-top: 6px;
+}
+
+.badge-cuadrado {
+    background: rgba(16, 185, 129, 0.2);
+    color: #34d399;
+}
+
+.badge-sobrante {
+    background: rgba(59, 130, 246, 0.2);
+    color: #60a5fa;
+}
+
+.badge-faltante {
+    background: rgba(239, 68, 68, 0.2);
+    color: #f87171;
+}
+
+.resultado-detalles {
+    margin-bottom: 20px;
+    padding: 14px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.detalle-linea {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    font-size: 0.88rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.detalle-linea.total {
+    font-weight: 700;
+    color: #818cf8;
+    border-top: 1px solid rgba(99, 102, 241, 0.2);
+    padding-top: 10px;
+    margin-top: 4px;
+}
+
+.resultado-acciones {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* HISTORIAL */
+.historial-cortes {
+    margin-top: 24px;
+    padding: 16px;
+    background: rgba(26, 29, 46, 0.8);
+    border-radius: 14px;
+    border: 1px solid rgba(99, 102, 241, 0.1);
+}
+
+.historial-cortes h4 {
+    margin: 0 0 12px;
+    color: #c7d2fe;
+}
+
+.tabla-historial {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+}
+
+.tabla-historial th {
+    text-align: left;
+    padding: 8px;
+    color: #6b7280;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(99, 102, 241, 0.15);
+}
+
+.tabla-historial td {
+    padding: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.text-ok {
+    color: #34d399;
+}
+
+.text-sobrante {
+    color: #60a5fa;
+}
+
+.text-faltante {
+    color: #f87171;
+}

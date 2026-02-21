@@ -1,0 +1,95 @@
+/* ==============================
+   MODAL MEDICAMENTOS CONTROLADOS
+   ============================== */
+.controlled-modal {
+    max-width: 520px;
+}
+
+.controlled-modal h3 {
+    color: #e67e22;
+    margin-bottom: 8px;
+}
+
+.controlled-modal .warning-text {
+    color: #c0392b;
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+    padding: 8px 12px;
+    background: rgba(231, 76, 60, 0.08);
+    border-radius: 6px;
+    border-left: 3px solid #c0392b;
+}
+
+.controlled-modal .form-group {
+    margin-bottom: 14px;
+}
+
+.controlled-modal .form-group label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #2c3e50;
+}
+
+.controlled-modal .form-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: border-color 0.2s;
+}
+
+.controlled-modal .form-group input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+}
+
+.controlled-modal .error {
+    color: #e74c3c;
+    font-size: 0.8rem;
+    margin-top: 4px;
+    display: block;
+}
+
+.controlled-modal .modal-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #eee;
+}
+
+.controlled-modal .btn-cancel {
+    padding: 10px 20px;
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    background: #fff;
+    color: #7f8c8d;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.controlled-modal .btn-cancel:hover {
+    background: #f8f9fa;
+    border-color: #95a5a6;
+}
+
+.controlled-modal .btn-confirm {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background: #27ae60;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.controlled-modal .btn-confirm:hover {
+    background: #219a52;
+}

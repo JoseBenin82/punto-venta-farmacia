@@ -1,0 +1,199 @@
+.inventario-container {
+    padding: 20px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.inventario-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.inventario-header h2 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 28px;
+}
+
+.header-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-entrada {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    color: white;
+}
+
+.btn-salida {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+}
+
+.btn-ajuste {
+    background: linear-gradient(135deg, #ffa751 0%, #ffe259 100%);
+    color: white;
+}
+
+/* Resumen de stock */
+.stock-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.summary-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.summary-card h3 {
+    margin: 0 0 15px 0;
+    color: #7f8c8d;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.summary-value {
+    font-size: 48px;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.summary-card.warning .summary-value {
+    color: #e74c3c;
+}
+
+/* Filtros */
+.inventario-filters {
+    margin-bottom: 20px;
+}
+
+/* Tabla de movimientos */
+.movimientos-table-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.movimientos-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.movimientos-table thead {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+}
+
+.movimientos-table th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.movimientos-table td {
+    padding: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 14px;
+}
+
+.movimientos-table tbody tr {
+    transition: background-color 0.2s;
+}
+
+.movimientos-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.badge-entrada {
+    background: #d4edda;
+    color: #155724;
+}
+
+.badge-salida {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.badge-ajuste {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.cantidad-entrada {
+    color: #27ae60;
+    font-weight: 600;
+}
+
+.cantidad-salida {
+    color: #e74c3c;
+    font-weight: 600;
+}
+
+.cantidad-ajuste {
+    color: #f39c12;
+    font-weight: 600;
+}
+
+.stock-nuevo {
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+/* Formulario */
+.movimiento-form-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.movimiento-form-container h2 {
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.movimiento-form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.producto-info-box {
+    background: #e3f2fd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #2196f3;
+}
+
+.producto-info-box p {
+    margin: 5px 0;
+    color: #1976d2;
+}
+
+@media (max-width: 768px) {
+    .stock-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .header-actions {
+        flex-direction: column;
+    }
+
+    .movimientos-table-container {
+        overflow-x: auto;
+    }
+}
